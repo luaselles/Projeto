@@ -1,0 +1,37 @@
+.rodape {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    background-color: #FFDEAD;
+    align-items: center;
+    justify-content: center;
+    color:dimgray;
+}
+.cabecalho{
+    display: flex;
+    width: 100vw;
+    height: 8vh;
+    background-color: #FFDEAD;
+}
+
+.cabecalho .titulo {
+    display: flex;
+    width: 85vw;
+    align-items: center;
+    justify-content: center;
+    color:dimgray;
+}
+
+.cabecalho .usuario{
+    display: flex;
+    align-items: flex-end;
+}
+
+.cabecalho .usuario p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.cabecalho .usuario p img{
+    width: 1.5em;
+    height: 1.5em;
+}

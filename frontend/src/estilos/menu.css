@@ -1,0 +1,27 @@
+.menu{
+    width: 15vw;
+    height: 80vh;
+    background-color: #FFDEAD;
+    color: white;
+    font-size: 20px;
+   
+}
+
+.menu > ul > li {
+    list-style: none;
+    width: 12vw;
+    height: 6vh;
+    text-align: center;
+    color: white;
+    
+}
+
+.menu > ul > li:hover {
+    background-color: #DEB887;
+    
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
