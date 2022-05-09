@@ -38,6 +38,19 @@ export function PaginaEvento(props){
     );
 }
 
+export function PaginaEscoteiro(props){
+
+    function manipulaSubmissaoDados(e){
+        e.preventDefault();
+    }
+
+    return(
+        <Pagina>
+            <ControladoraCadastroEscoteiros/>
+        </Pagina>
+    );
+}
+
 export function Pagina404(props){
     return(
         <Pagina>

@@ -13,11 +13,12 @@ app.use(cors({
 
 import {rotaProduto} from './rotas/rotaProduto.js';
 import {rotaEvento} from './rotas/rotaEvento.js';
+import {rotaEscoteiro} from './rotas/rotaEscoteiro.js';
 app.use('/produtos', rotaProduto);
 app.use('/eventos', rotaEvento);
+app.use('/escoteiros', rotaEscoteiro);
 
 const servidor = http.createServer(app);
 servidor.listen(porta,hostname, ()=>{
-    console.log('Servidor escutando na em ' 
-    + hostname + ":" + porta);
+    console.log('Servidor escutando em ' + hostname + ":" + porta);
 });
