@@ -11,7 +11,8 @@ export function Pagina(props){
                 <aside>
                     <Menu itens={[ {rotulo:"Home",url:"/"},
                                    {rotulo:"Produtos",url:"/produtos"},
-                                   {rotulo:"Eventos",url:"/eventos"} ]} />
+                                   {rotulo:"Eventos",url:"/eventos"},
+                                   {rotulo:"Escoteiros",url:"/escoteiros"} ]} />
                 </aside>
                 <div className="conteudo">
                           {props.children}

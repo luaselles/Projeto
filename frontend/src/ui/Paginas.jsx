@@ -2,6 +2,7 @@
 import { Pagina } from "../templates/ui/Pagina";
 import ControladoraCadastroProdutos from "./formularios/ControladoraCadastroProdutos";
 import ControladoraCadastroEventos from "./formularios/ControladoraCadastroEventos";
+import ControladoraCadastroEscoteiros from "./formularios/ControladoraCadastroEscoteiros";
 import Home from "./formularios/Home";
 
 export function PaginaHome(props){

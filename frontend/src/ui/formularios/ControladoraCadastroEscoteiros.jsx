@@ -8,13 +8,13 @@ const localRecursos = 'http://localhost:4000/escoteiros';
 
 export default function ControladoraCadastroEscoteiros(props){
     const [mostrarTabela, setMostrarTabela] = useState(true);
-    const [eventos, setEventos] = useState([]);
+    const [escoteiros, setEscoteiros] = useState([]);
 
     const [foiCarregado,setFoiCarregado] = useState(false);
 
     const [erro, setErro] = useState(null);
     const [estaAtualizando, setEstaAtualizando] = useState(false);
-    const [atualizandoEscoteiro,setAtualizandoEscoteiro] = useState({
+    const [atualizandoEscoteiro, setAtualizandoEscoteiro] = useState({
         id: 0,
         nome: "",
         cpf: "",
@@ -28,7 +28,7 @@ export default function ControladoraCadastroEscoteiros(props){
         .then(resposta=>resposta.json())
         .then(dados=>{
             setFoiCarregado(true);
-            setEventos(dados);
+            setEscoteiros(dados);
         }, 
         error =>{
             setFoiCarregado(true);
